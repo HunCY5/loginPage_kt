@@ -15,7 +15,6 @@ import com.google.firebase.auth.auth
 
 class JoinPage : AppCompatActivity() {
     lateinit var btn_back: Button
-    lateinit var btn_join: Button
     private lateinit var auth: FirebaseAuth
     private lateinit var intent_back: Intent
     override fun onCreate(savedInstanceState: Bundle?) {
