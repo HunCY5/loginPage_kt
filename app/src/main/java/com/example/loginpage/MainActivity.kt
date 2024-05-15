@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var et_pw :EditText
     lateinit var btn_confirm : Button
     lateinit var btn_find : Button
+    lateinit var btn_join : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -47,6 +48,12 @@ class MainActivity : AppCompatActivity() {
                     et_pw.error = null
                 }
             }
+        }
+//        intent to joinPage
+        btn_join = findViewById(R.id.btn_join)
+        btn_join.setOnClickListener {
+            val intentJoin = Intent(this, JoinPage::class.java)
+            startActivity(intentJoin)
         }
 //        ID,PW 찾기
         btn_find.setOnClickListener {
