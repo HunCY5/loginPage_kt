@@ -60,6 +60,15 @@
             android:text="ID,PW 찾기"
             android:textColor="#E91E63" />
         <Button
+            android:id="@+id/btn_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FDF6FE"
+            android:text="회원가입"
+
+            android:textColor="@color/black" />
+
+        <Button
         android:id="@+id/btn_confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
