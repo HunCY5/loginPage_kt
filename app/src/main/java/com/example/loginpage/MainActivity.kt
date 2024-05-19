@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
                     }
                     else {
                         Toast.makeText(this@MainActivity, "로그인 실패", Toast.LENGTH_LONG).show()
+                        et_id.error = "로그인 실패"
+                        et_pw.error = "로그인 실패"
 
                     }
                 }

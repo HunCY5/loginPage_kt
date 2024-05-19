@@ -7,7 +7,11 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="40dp">
-
+<!--    to-do- list-->
+<!--    버튼 비활성화-->
+<!--    로그시간-->
+<!--textwatcher-->
+<!--    정규식-->
 
 <!--    1. 입력 텍스트 길이 제한-->
 <!--    1) counterMaxLength="": 제한 길이 넘을 시 붉은색-->
