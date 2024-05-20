@@ -1,5 +1,6 @@
 package com.example.loginpage
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -17,7 +18,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var et_id :EditText
     lateinit var et_pw :EditText
     lateinit var btn_join : Button
+    lateinit var btn_search: Button
     private lateinit var auth: FirebaseAuth
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -53,6 +56,12 @@ class MainActivity : AppCompatActivity() {
         btn_join.setOnClickListener {
             val intentJoin = Intent(this, JoinPage::class.java)
             startActivity(intentJoin)
+        }
+//        intent to searchPage
+        btn_search = findViewById(R.id.btn_search)
+        btn_search.setOnClickListener {
+            val intentSearch = Intent(this, SearchActivity::class.java)
+            startActivity(intentSearch)
         }
 
 
